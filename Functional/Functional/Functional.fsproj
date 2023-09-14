@@ -6,7 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs"/>
+        <Compile Include="subStrings.fs" />
+        <Compile Include="shift.fs" />
     </ItemGroup>
 
 </Project>

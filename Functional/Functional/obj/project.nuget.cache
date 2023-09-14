@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SYuPfY+cAheLM+XF3J9QWYmBLnApNl2MQGrScNNki4/KlRmD+PHkMgBy8HAQRgigl+rjWdrkvGUBhkZ4bRZTsg==",
+  "dgSpecHash": "RV9Tcm2A+5zxQYneT+4aDyLiKQ0bdFa67QLDaUcPQ5D7jBzLFzq8S3hxrhmPjRvgfioMAh1IHrDmm0Wv4uIaKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\josue\\Documents\\GitHub\\programming_languages\\Functional\\Functional\\Functional.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\josue\\.nuget\\packages\\fsharp.core\\7.0.200\\fsharp.core.7.0.200.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\josue\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+    "C:\\Users\\josue\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
   ],
   "logs": []
 }
