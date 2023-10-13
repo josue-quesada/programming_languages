@@ -38,23 +38,23 @@ aplanar([X|Xs], [X|L2Rest]) :- \+ is_list(X), aplanar(Xs, L2Rest).
 % partir([2, 7, 4, 8, 9, 1], 6, L, G).
 
 partir([], _, [], []).
-partir([X|Rest], Threshold, [X|Less], Greater) :-
-    X =< Threshold, partir(Rest, Threshold, Less, Greater).
-partir([X|Rest], Threshold, Less, [X|Greater]) :-
-    X > Threshold, partir(Rest, Threshold, Less, Greater).
+partir([X|T], Y, [X|Less], Greater) :-
+    X =< Y, partir(T, Y, Less, Greater).
+partir([X|Rest], Y, Less, [X|Greater]) :-
+    X > Y, partir(Rest, Y, Less, Greater).
 
 % 5)Implemente un predicado que, a partir de una lista de cadenas string,
 % filtre aquellas que contengan una subcadena que el usuario indique en
 % otro argumento
 % Usage examples
-%
-%
+% subCadenas("la", ["la casa", "el perro", "pintando la cerca"],
+% Filtered).
 
 subCadenas(_, [], []).
-subCadenas(Subcadena, [Cadena|Resto], Filtradas) :-
-    sub_atom(Cadena, _, _, _, Subcadena),
-    subCadenas(Subcadena, Resto, FiltradasResto),
-    Filtradas = [Cadena|FiltradasResto].
+subCadenas(S, [H|T], Filtradas) :-
+    sub_atom(H, _, _, _, S),
+    subCadenas(S, T, FiltradasResto),
+    Filtradas = [H|FiltradasResto].
 
-subCadenas(Subcadena, [_|Resto], Filtradas) :-
-    subCadenas(Subcadena, Resto, Filtradas).
+subCadenas(S, [_|T], Filtradas) :-
+    subCadenas(S, T, Filtradas).
